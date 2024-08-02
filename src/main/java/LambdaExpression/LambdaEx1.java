@@ -40,6 +40,4 @@ public class LambdaEx1 {
         System.out.println("Sum is : "+sum);
     }
 
-
-
 }
