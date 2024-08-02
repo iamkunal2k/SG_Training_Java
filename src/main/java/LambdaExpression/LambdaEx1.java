@@ -1,6 +1,7 @@
 package LambdaExpression;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 interface A {
     void show(int i);
@@ -38,6 +39,12 @@ public class LambdaEx1 {
 
         int sum = b1.add(3,4);
         System.out.println("Sum is : "+sum);
+
+        ArrayList<Integer> i = new ArrayList<>();
+        i.add(1);
+        i.add(1);
+        i.add(1);
+
     }
 
 }
