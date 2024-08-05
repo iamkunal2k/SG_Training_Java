@@ -1,8 +1,9 @@
 package Collections;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Employe {
+public class Employe implements Comparable<Employe> {
 
     String name;
     int id;
@@ -31,5 +32,14 @@ public class Employe {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
+    }
+
+
+    // using comperator
+
+
+    @Override
+    public int compareTo(Employe that) {
+        return this.id - that.id;
     }
 }
