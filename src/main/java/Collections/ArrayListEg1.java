@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListEg1 {
 
@@ -31,6 +32,14 @@ public class ArrayListEg1 {
 
         list.remove(3);
         System.out.println("After removing 50 : "+list);
+
+        Iterator<Integer> it = list.iterator();
+
+        while (it.hasNext()) {
+            System.out.println("iterator " + it.next());
+        }
     }
+
+
 
 }
